@@ -1,0 +1,10 @@
+//将远程仓库克隆到本地
+1.git clone 仓库地址
+//将本地和远程仓库对比
+2.git status
+//将有变动的添加到暂存区
+3.git add
+//进行标识操作
+4.git commit -m"标识操作"
+//推送到远程仓库
+5.git push origin master
