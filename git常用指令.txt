@@ -8,3 +8,5 @@
 4.git commit -m"标识操作"
 //推送到远程仓库
 5.git push origin master
+//关联远程仓库
+6。git remote add origin 仓库地址
