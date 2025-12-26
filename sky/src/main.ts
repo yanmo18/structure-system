@@ -15,6 +15,7 @@ import Antd from "ant-design-vue";
 //导入样式 给所有浏览统一样式的
 import 'ant-design-vue/dist/reset.css';
 
+
 const app = createApp(App)//创建Vue应用实例，并传入根组件App
 //将导入的插件挂载到APP实例上面
 app.use(createPinia())//使用Pinia状态管理插件

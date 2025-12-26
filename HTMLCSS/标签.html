@@ -4,7 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+        .box{
+            width: 300px;
+            height:300px;
+            background-color:rgb(245, 36, 4) ;  
+            border-right: 150px  solid rgb(0, 242, 255);
+            border-radius: 50%;   
+            display: flex;
+            flex-direction:row;
+            justify-content:space-between;
+        }
+        body,html{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        /*id选择器，是唯一标识符  */
+        #one{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(8, 8, 8);
+            border:50px solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+        #two{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(8, 8, 8);
+            border:50px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            
+        }
+        .box2{
+             width: 150px;
+            height:300px;
+            margin-left:200px;
+            background-color:rgb(39, 215, 80) ;  
+            /* border-right: 150px  solid rgb(0, 242, 255); */
+            border-radius: 50%;   
+            transform:rotate(270deg);
+            /* animation:move 1s linear infinite;  */
+            
+            
+        }
+        .box2:hover {
+            animation:move 1s linear infinite;
+        }
+        .fly:hover {
+            /* animation:fly 2s ease-in-out infinite; */
+        }
+        #three, #four{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(8, 8, 8);
+            border:40px solid rgb(244, 241, 241);
+            border-radius: 50%;
+            
+           
+        }
+        #three{
+            transform:translate(50%)
+
+        }
+        #four{
+
+            transform:translate(75px,-15px)
+        }
+        @keyframes fly{
+            from{
+                transform:translate(0,0)
+            }
+            to{
+                transform:translate(100px,-100px)
+            }
+            to{
+                transform:translate(52px,333px)
+            }
+            to{
+                transform:translate(0,0)
+            }
+        }
+        @keyframes move{
+            from{
+                transform:rotate(0);
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: red;
+            transform: rotate(45deg);
+            position:relative;
+            margin: 200px;
+        }
+        .box3::before ,.box3::after{
+            content:"";
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .box3::before{top:-100px;
+            left: 0;
+        }
+        .box3::after{
+            top:0;
+            left:-100px;
+        }
+        .box3{
+            animation: beat 0.7s ease infinite alternate;
+        }
+        @keyframes beat{
+            to{
+                transform: rotate(45deg)
+                scale(1.2);
+            }
+        }
+        /* 3D立方体 */
+        .cube-box{
+            width: 200px;
+            height: 200px;
+            perspective: 800px;
+            /* 透视距离，越小立体感越强 */
+            margin: 100px auto;
+           
+                }
+                .cube-box:hover{
+                    width:240px;
+                    height: 240px;
+                }
+            /* 立方体容器，开启三维空间+旋转面展开 */
+            .cube{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+                /* 关键，开启三维空间 */
+                animation: rotate 5s linear infinite;
+                transition:all 2s ease-out;                /* 自动旋转 */
+            }
+            .cube-box:hover .cube{
+                /* animation-play-state: paused; */
+                /* animation:rotate 2s ease-in-out infinite;
+                transform:scale(1.1); */
+                animation: rotate 4s ease-in-out infinite;
+            }
+            /* 六个面通用样式 */
+            .cube-face{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                /* opacity: 0.8; */
+                border: 2px solid #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color:#fff;
+                transition: all 1s cubic-bezier(0.25, 0.8, 0.2, 0.94);
+                overflow: hidden;
+            }
+            .cube-box:hover .cube-face{
+                width:240px;
+                height: 240px;
+                opacity: 0.95;
+            }
+            .cube-face img{
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+            }
+            /* 立方体六个面定位 */
+            .front{
+                background:#ff6f61 url(/exe-training/HTMLCSS/img/17b8270e9d029e795e8b15f463ba65cb.jpg);
+                transform: translateZ(100px);
+
+            }
+            .right{
+                background:#03df50 url(/exe-training/HTMLCSS/img/23d649fecc8e4e847be86091adbb1c90.jpg);
+                transform: translateX(100px) rotateY(90deg);
+            }
+            .back{
+                background:#015ce5 url(/exe-training/HTMLCSS/img/6bd9d5645d999879e143badcf8e83553.jpg);
+                transform: translateZ(-100px) rotateY(180deg);
+            }
+            .left{
+                background:#fc069e url(/exe-training/HTMLCSS/img/7c9f268334bd588d12a0e0e5af319fdc.jpg);
+                transform: translateX(-100px) rotateY(-90deg);
+            }
+            .top{
+                background:#512a27 url(/exe-training/HTMLCSS/img/fd0f511bc5aa12ec29aa2a5e973d7c35.jpg);
+                transform: translateY(-100px) rotateX(90deg);
+            }
+            .bottom{
+                background:#ff6f61 url(/exe-training/HTMLCSS/img/5bf35f3b52a2b34f977636b1d28b3fbd.jpg);
+                transform: translateY(100px) rotateX(90deg);
+            }
+            /* hover每个面向外炸开，同时跟着旋转 */
+.cube-box:hover .front  {transform: translateZ(220px); opacity: 0.95;}
+.cube-box:hover .back   {transform: translateZ(-220px) rotateY(180deg); opacity: 0.95;}
+.cube-box:hover .left   {transform: translateX(-220px) rotateY(-90deg); opacity: 0.95;}
+.cube-box:hover .right  {transform: translateX(220px) rotateY(90deg); opacity: 0.95;}
+.cube-box:hover .top    {transform: translateY(-220px) rotateX(90deg); opacity: 0.95;}
+.cube-box:hover .bottom {transform: translateY(220px) rotateX(-90deg); opacity: 0.95;}
+            /* 动画 */
+            @keyframes rotate{
+                from{
+                    transform: rotateX(0) rotateY(0);
+                }
+                to{
+                    transform: rotateX(360deg) rotateY(360deg);
+                }
+            }
+
+    </style>
+    <div class="box">
+        <p id="one"></p>
+        <p id="two"></p>
+        </div>
+        <div class="box2">
+            <div class="fly">
+        <p id="three"></p>
+        <p id="four"></p>
+        </div>
+        </div>
+        <div class="box3">
+        </div>
+        <!-- 3D立方体 -->
+        <div class="cube-box">
+            <div class="cube">
+                    <div class="cube-face front"><img src="/exe-training/HTMLCSS/img/5bf35f3b52a2b34f977636b1d28b3fbd.jpg"></div>
+                    <div class="cube-face right"><img src="/exe-training/HTMLCSS/img/23d649fecc8e4e847be86091adbb19fdc.jpg"></div>
+                    <div class="cube-face back"><img src="/exe-training/HTMLCSS/img/6bd9d5645d999879e143badcf8e83553.jpg"><img src="/exe-training/HTMLCSS/img/6bd9d5645d999879e143badcf8e83553.jpg"></div>  
+                    <div class="cube-face left"><img src="/exe-training/HTMLCSS/img/7c9f268334bd588d12a0e0e5af319fdc.jpg"></div>
+                    <div class="cube-face top"><img src="/exe-training/HTMLCSS/img/fd0f511bc5aa12ec29aa2a5e973d7c35.jpg"></div>  
+                    <div class="cube-face bottom"><img src="/exe-training/HTMLCSS/img/17b8270e9d029e795e8b15f463ba65cb.jpg"></div>  
+            </div>
+
+        </div>
 </head>
 <body>
     
