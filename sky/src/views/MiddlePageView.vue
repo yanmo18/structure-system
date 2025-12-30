@@ -15,8 +15,8 @@
     <div class="left">
       <LeftTop></LeftTop>
       <!-- 应用导入的组件 -->
-      <div class="left-middle">做中</div>
-      <div class="left-bt">左下</div>
+      <LeftCenter></LeftCenter>
+      <LeftBottom></LeftBottom>
     </div>
     <div class="center">
       <Content3d></Content3d>
@@ -37,8 +37,15 @@
   import Content3d from '@/components/Content3d.vue';
   // 导入左上组件
   import LeftTop from '@/components/LeftTop.vue';
+  // 导入左中角组件
+   import LeftCenter from '@/components/LeftCenter.vue';
+   // 导入左下角组件
+  import LeftBottom from'@/components/LeftBottom.vue'
+ 
+
   
   import {onBeforeUnmount, onMounted,ref} from "vue";
+
 
   // 定义时间变量
   const time=ref("");
@@ -164,6 +171,7 @@ onBeforeUnmount(()=>{
   grid-template-rows: repeat(3,1fr);
   /* 均分为三部分 */
   gap:10px;
+  box-sizing: border-box;
 }
 .center{
   background-size: 700px;

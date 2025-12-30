@@ -47,9 +47,11 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup lang="ts">
+  // vue3的新特性  setup(){} 
   //如何传入真实数据
   import {ref} from'vue';
   const arr=ref([{
@@ -67,11 +69,11 @@
 ])
   const arr2=ref([{
     name:"施工单位",
-    num:"中国建筑无线建筑集团"
+    num:"中国的无线建筑集团"
   },
   {
     name:"施工单位",
-    num:"中国建筑集团有限公司"
+    num:"中国集团有限公司"
   },
   {
     name:"施工单位",
@@ -90,25 +92,25 @@
     padding:0;
     box-sizing: border-box;
   }
-  .left-top::before{
-    content:"";
-    position: absolute;
-    top:28px;left:-20px;
+  .left-top{
+    /* position: absolute; */
+    /* 脱离了文档流，绝对定位，导致不再去占用页面空间 */
+    /* top:20px;left:-20px; */
+    margin-top:25px ;
     width: 470px;
     height: 300px;
     background:url(../assets/img/006.png) no-repeat;
-    background-color: rgba(255,255,255,.5);
-    z-index:-1;
-  }
-  .left-top{
+   
+    background-color: #b9bcda;
+    box-sizing: border-box;
     background-blend-mode: color-burn;
-
-  }
+     z-index:-1;
+  } 
   .left-t-title{
     font-style: italic;
     font-weight: 700;
     font-size: 20px;
-    padding:25px 80px;
+    padding:18px 90px;
     background: linear-gradient(to right,#fff,aqua,#fff);
     background-clip:text;
     -webkit-tap-fill-color:transparent;
@@ -129,9 +131,9 @@
     justify-content: space-between;
     text-align: center;
   }
-  .money p:nth-child(2){
-    padding-top:4px;
-    
+  .money p:nth-child(n){
+    padding-top:2px;
+    width: 100px;
   }
   .money p:nth-child(1){
     color:#d8d6d1;
@@ -147,7 +149,8 @@
     display: flex;
      /* 换行显示 */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-around;
+    gap:15px;
     
     margin-top:10px;
   }
