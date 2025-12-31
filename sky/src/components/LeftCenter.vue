@@ -89,14 +89,15 @@
     box-sizing: border-box;
 }
 .left-center{
+    margin-top: 15px;
     top:330px; 
     width: 470px;
     height:300px;
-    background:url(../assets/img/009.png) no-repeat;
-    background-color: rgba(170, 168, 241, 0.5);
-    opacity: 0.8;
+     background:url(../assets/img/015.png) no-repeat;
+      background-color: rgba(38, 118, 247, 0.3);
+    /* opacity: 0.8; */
     box-sizing: border-box; 
-     background-blend-mode: color-burn;
+     background-blend-mode: normal;
      /* 融合背景图和颜色，要同时设置两个值生效 */
      z-index: -1; 
  } 

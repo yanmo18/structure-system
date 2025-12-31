@@ -99,9 +99,8 @@
     margin-top:25px ;
     width: 470px;
     height: 300px;
-    background:url(../assets/img/006.png) no-repeat;
-   
-    background-color: #b9bcda;
+      background:url(../assets/img/015.png) no-repeat;
+      background-color:rgba(38, 118, 247, 0.3);
     box-sizing: border-box;
     background-blend-mode: color-burn;
      z-index:-1;

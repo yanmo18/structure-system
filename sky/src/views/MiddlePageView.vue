@@ -20,11 +20,11 @@
     </div>
     <div class="center">
       <Content3d></Content3d>
-      <!-- <div class="center-bt">中下</div> -->
+    <CenterBottom></CenterBottom>
     </div>
     <div class="right">
-      <div class="right-top">右上</div>
-      <div class="right-bt">右下</div>
+      <RightTop></RightTop>
+      <Rightbottom></Rightbottom>
     </div>
     </div>
  </Container>
@@ -41,9 +41,12 @@
    import LeftCenter from '@/components/LeftCenter.vue';
    // 导入左下角组件
   import LeftBottom from'@/components/LeftBottom.vue'
- 
-
-  
+ //导入中下
+ import CenterBottom from '@/components/CenterBottom.vue';
+ //导入右上
+import RightTop from '@/components/RightTop.vue';
+  //导入右下
+  import Rightbottom from '@/components/Rightbottom.vue';
   import {onBeforeUnmount, onMounted,ref} from "vue";
 
 
