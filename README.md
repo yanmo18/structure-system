@@ -87,9 +87,3 @@ npm run build
 7 天环境指标趋势分析
 
 ## 演示图
-<table>
-    <tr>
-        <td><img src="imgs图片1.png"/></td>
-        <td><img src="imgs图片2.png"/></td>
-    </tr>
-</table>
