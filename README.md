@@ -86,4 +86,4 @@ npm run build
 温度 / 风速 / 噪音等实时数据仪表盘
 7 天环境指标趋势分析
 
-<img src="imgs图片1.png" width="400">
+![环境监控功能截图](imgs图片1.png)
