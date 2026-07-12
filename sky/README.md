@@ -121,16 +121,16 @@ npm run preview
 ## 📷 项目展示
 
 ### 登录页面
-![登录页面](public/05%20(4).png)
+![登录页面](public/login.png)
 
 ### 系统大屏
-![系统大屏](public/05%20(1).png)
+![系统大屏](public/dashboard.png)
 
 ### 3D 地球展示
-![3D地球展示](public/05%20(2).png)
+![3D地球展示](public/earth3d.png)
 
 ### 圆环图表
-![圆环图表](public/05%20(3).png)
+![圆环图表](public/chart.png)
 
 ## ⚙️ 配置说明
 
