@@ -89,13 +89,13 @@ npm run build
 ## 📷 演示图
 
 ### 登录页面
-![登录页面](docs/login.png)
+<img src="docs/login.png" alt="登录页面" width="800">
 
 ### 系统大屏
-![系统大屏](docs/dashboard.png)
+<img src="docs/dashboard.png" alt="系统大屏" width="800">
 
 ### 3D 地球展示
-![3D地球展示](docs/earth3d.png)
+<img src="docs/earth3d.png" alt="3D地球展示" width="800">
 
 ### 圆环图表
-![圆环图表](docs/chart.png)
+<img src="docs/chart.png" alt="圆环图表" width="800">
