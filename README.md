@@ -89,13 +89,13 @@ npm run build
 ## 📷 演示图
 
 ### 登录页面
-![登录页面](login.png)
+<img src="https://gitee.com/yanqinglanyanmo/exe-training/raw/master/login.png" alt="登录页面" style="max-width:800px;">
 
 ### 系统大屏
-![系统大屏](dashboard.png)
+<img src="https://gitee.com/yanqinglanyanmo/exe-training/raw/master/dashboard.png" alt="系统大屏" style="max-width:800px;">
 
 ### 3D 地球展示
-![3D地球展示](earth3d.png)
+<img src="https://gitee.com/yanqinglanyanmo/exe-training/raw/master/earth3d.png" alt="3D地球展示" style="max-width:800px;">
 
 ### 圆环图表
-![圆环图表](chart.png)
+<img src="https://gitee.com/yanqinglanyanmo/exe-training/raw/master/chart.png" alt="圆环图表" style="max-width:800px;">
