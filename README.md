@@ -89,13 +89,13 @@ npm run build
 ## 📷 演示图
 
 ### 登录页面
-![登录页面](sky/public/05%20(1).png)
+![登录页面](sky/public/05 (1).png)
 
 ### 系统大屏
-![系统大屏](sky/public/05%20(2).png)
+![系统大屏](sky/public/05 (2).png)
 
 ### 3D 地球展示
-![3D地球展示](sky/public/05%20(3).png)
+![3D地球展示](sky/public/05 (3).png)
 
 ### 圆环图表
-![圆环图表](sky/public/05%20(4).png)
+![圆环图表](sky/public/05 (4).png)
