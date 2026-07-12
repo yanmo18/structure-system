@@ -89,13 +89,13 @@ npm run build
 ## 📷 演示图
 
 ### 登录页面
-![登录页面](sky/public/login.png)
+![登录页面](https://gitee.com/yanqinglanyanmo/exe-training/raw/master/sky/public/login.png)
 
 ### 系统大屏
-![系统大屏](sky/public/dashboard.png)
+![系统大屏](https://gitee.com/yanqinglanyanmo/exe-training/raw/master/sky/public/dashboard.png)
 
 ### 3D 地球展示
-![3D地球展示](sky/public/earth3d.png)
+![3D地球展示](https://gitee.com/yanqinglanyanmo/exe-training/raw/master/sky/public/earth3d.png)
 
 ### 圆环图表
-![圆环图表](sky/public/chart.png)
+![圆环图表](https://gitee.com/yanqinglanyanmo/exe-training/raw/master/sky/public/chart.png)
